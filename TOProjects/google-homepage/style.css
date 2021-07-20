@@ -1,0 +1,113 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#sredina {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo {
+    margin-left: auto;
+    transform: translate( 25%);
+}
+
+#search input {
+    display: block;
+    width: 600px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px #ccc solid;
+}
+
+#search {
+    padding-top: 20px;
+}
+#nav {
+    position: absolute;
+    right: 0;
+    padding-top: 30px;
+
+    width: 250px;
+}
+#navbar a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+    padding: 10px;
+    padding-top: 10px;
+    height: 30px;
+}
+#nav svg {
+    position: absolute;
+    margin-right: 60px;
+}
+#navbar svg{
+    padding-top: 1spx;
+}
+
+#nav img {
+    position: absolute;
+    margin-top: -7px;
+    border-radius: 25px;
+    margin-left: 40px;
+}
+
+#buttons {
+
+    position: absolute;
+    padding-top: 30px;
+    width: 300px;
+}
+
+#searchbtn, #lucky {
+    display: inline;
+    position: absolute;
+    padding: 20px;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#lucky {
+    left: 60px;
+    width: 125px;
+    margin-left: 250px;
+}
+
+#searchbtn {
+    width: 125px;
+    right: -0px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    display: inline;
+    width: 100%;
+    background-color: #eee;
+    height: 50px;
+}
+
+#footernav {
+    position: absolute;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+#footernav2 {
+    position: absolute;
+    right: 0;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+footer a {
+        text-decoration: none;
+        color: #555;
+        padding-left: 10px;
+        padding-right: 10px;
+}

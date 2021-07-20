@@ -1,0 +1,171 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container {
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 30px 0px 30px;
+    border-bottom: 1px #ddd solid;
+}
+
+#up {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#levo {
+    display: inline-flex;
+}
+
+#levo img {
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+#down {
+    display: inline-flex;
+}
+
+#desno img {
+    border-radius: 100px;
+}
+#desno {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    background-color: #eee;
+    height: 50px;
+    border-top: 1px #ddd solid;
+}
+
+
+#footernav {
+    position: absolute;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+#footernav2 {
+    position: absolute;
+    right: 0;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+footer a {
+        text-decoration: none;
+        color: #555;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+
+#search input {
+    display: block;
+    width: 675px;
+    height: 45px;
+    border-radius: 25px;
+    border: 0px #ccc solid;
+}
+
+#search {
+    filter: drop-shadow(0px 2px 2px #ddd)
+    drop-shadow(0px -1px 1px #ddd);
+}
+
+#down {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    display: inline-flex;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.filter svg {
+    transform: scale(75%);
+    color: #666;
+    fill: #666;
+}
+
+#search svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 11px;
+    margin-right: 20px;
+    fill: #666;
+}
+
+
+#search hr {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 11px;
+    margin-right: 62px;
+    fill: #666;
+    height: 27px;
+    width: 0px;
+    border: 0;
+    border-right: 1px #ccc solid;
+}
+
+svg {
+    fill: #666;
+}
+
+
+
+#results {
+    width: 600px;
+    margin-left: 180px;
+}
+
+.result {
+    padding-bottom: 35px;
+}
+
+.result p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+span {
+    color: #111;
+}
+
+.title {
+    color: #0099ff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    height: 0.6em;
+    display: inline-block;
+}
+
+.text {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
