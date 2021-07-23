@@ -11,8 +11,7 @@ function computerPlay() {
     }
 }
 
-function round(playerSelection, computerSelection) {
-    playerSelection = prompt(`Pls input`, ``).toUpperCase();
+/* function round(playerSelection, computerSelection) {
     computerSelection = computerPlay();
     if (playerSelection == `ROCK`) {
         if (computerSelection == `ROCK`){
@@ -49,9 +48,120 @@ function round(playerSelection, computerSelection) {
     }
     
 
+} */
+
+let rezH = 0;
+let rezC = 0;
+const rezDiv = document.querySelector(`#rezultat`);
+
+
+
+function round(playerSelection, computerSelection) {
+    computerSelection = computerPlay();
+    if (playerSelection == `ROCK`) {
+        if (computerSelection == `ROCK`){
+            console.log(`Tie! rock rock`);
+            rezDiv.textContent = rezH + `:` + rezC;
+            if (rezH == 5) {
+    rezDiv.textContent = `You win!`;
+} else if (rezC == 5) {
+    rezDiv.textContent = `You lose!`;
+}
+        } else if (computerSelection == `PAPER`){
+            console.log(`You lose! rock paper`);
+            rezC++;
+            console.log(rezC);
+            rezDiv.textContent = rezH + `:` + rezC;
+            if (rezH == 5) {
+    rezDiv.textContent = `You win!`;
+} else if (rezC == 5) {
+    rezDiv.textContent = `You lose!`;
+}
+        } else if (computerSelection == `SCISSORS`){
+            console.log(`You win! rock scissors`);
+            rezH++;
+            console.log(rezH);
+            rezDiv.textContent = rezH + `:` + rezC;
+            if (rezH == 5) {
+    rezDiv.textContent = `You win!`;
+} else if (rezC == 5) {
+    rezDiv.textContent = `You lose!`;
+}
+        } else {
+            console.log(`Error`);
+        }
+    } else if (playerSelection == `PAPER`){
+        if (computerSelection == `ROCK`){
+            console.log(`You win! paper rock`);
+            rezH++;
+            console.log(rezH);
+            rezDiv.textContent = rezH + `:` + rezC;
+            if (rezH == 5) {
+    rezDiv.textContent = `You win!`;
+} else if (rezC == 5) {
+    rezDiv.textContent = `You lose!`;
+}
+        } else if (computerSelection == `PAPER`){
+            console.log(`Tie! paper paper`);
+            rezDiv.textContent = rezH + `:` + rezC;
+            if (rezH == 5) {
+    rezDiv.textContent = `You win!`;
+} else if (rezC == 5) {
+    rezDiv.textContent = `You lose!`;
+}
+        } else if (computerSelection == `SCISSORS`){
+            console.log(`You lose! paper scissors`);
+            rezC++;
+            console.log(rezC);
+            rezDiv.textContent = rezH + `:` + rezC;
+            if (rezH == 5) {
+    rezDiv.textContent = `You win!`;
+} else if (rezC == 5) {
+    rezDiv.textContent = `You lose!`;
+}
+        } else {
+            console.log(`Error`);
+        }
+    } else if (playerSelection == `SCISSORS`){
+        if (computerSelection == `ROCK`){
+            console.log(`You lose! scissors rock`);
+            rezC++;
+            console.log(rezC);
+            rezDiv.textContent = rezH + `:` + rezC;
+            if (rezH == 5) {
+    rezDiv.textContent = `You win!`;
+} else if (rezC == 5) {
+    rezDiv.textContent = `You lose!`;
+}
+        } else if (computerSelection == `PAPER`){
+            console.log(`You win! scissors paper`);
+            rezH++;
+            console.log(rezH);
+            rezDiv.textContent = rezH + `:` + rezC;
+            if (rezH == 5) {
+    rezDiv.textContent = `You win!`;
+} else if (rezC == 5) {
+    rezDiv.textContent = `You lose!`;
+}
+        } else if (computerSelection == `SCISSORS`){
+            console.log(`Tie! scissors scissors`);
+            rezDiv.textContent = rezH + `:` + rezC;
+            if (rezH == 5) {
+    rezDiv.textContent = `You win!`;
+} else if (rezC == 5) {
+    rezDiv.textContent = `You lose!`;
+}
+        } else {
+            console.log(`Error`);
+        }
+    } else {
+        console.log(`Error`);
+    }
+    
+
 }
 
-function game(){
+/* function game(){
     let scoreH = 0;
     let scoreC = 0;
     for (let i = 0; i < 5; i++) {
@@ -78,5 +188,16 @@ function game(){
         console.log(`Error`);
     }
 }
+ */
+const btn1 = document.getElementById(`btn1`);
+btn1.addEventListener("click", function() {round(`ROCK`);});
+const btn2 = document.getElementById(`btn2`);
+btn2.addEventListener("click", function() {round(`PAPER`);});
+const btn3 = document.getElementById(`btn3`);
+btn3.addEventListener("click", function() {round(`SCISSORS`);});
 
-game();
+
+
+
+
+/* game(); */
